@@ -1,0 +1,92 @@
+.news{
+    list-style: none;
+    padding:10px;
+}
+
+.news li{
+    display:block;
+    padding:10px;
+    margin:5px;
+    font-size: 20px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 5px;
+}
+.news li:hover{
+    transform: scaleX(0.95);
+    cursor: pointer;
+}
+.news li a{
+    text-decoration: none;
+    color:black;
+}
+
+.column {
+    width: 95%;
+    height: 90%;
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+  }
+  .column:hover{
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+
+  }
+  /* Remove extra left and right margins, due to padding */
+  .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      justify-items: center;
+      margin-top: 10px;
+    }
+  
+  /* Clear floats after the columns */
+
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      display: block;
+      margin:0px auto;
+    }
+    .row{
+        grid-template-columns: 1fr;
+      }
+  }
+  @media (min-width: 601px) and (max-width: 991px){
+      .row{
+        grid-template-columns: 1fr 1fr;
+      }
+  }
+  @media (min-width: 992px) and (max-width: 1386px){
+    .row{
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+  /* Style the counter cards */
+  .card {
+    display:grid;
+    padding: 16px;
+    text-align: center;
+    height: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+  .card:hover{
+      cursor: pointer;
+  }
+.card span{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    font-size: 20px;
+}
+
+.card p{
+  margin-block-start: auto;
+  margin-block-end: auto;
+  position: relative;
+  bottom: 20px;
+  margin-left: auto;
+  font-size: 12px;
+}
